@@ -1,7 +1,7 @@
 select *
 from list_medications
 
--- Сортировка по возростанию
+-- Сортировка по возрастанию
 select * 
 from list_medications
 order by name
@@ -14,7 +14,7 @@ order by name desc
 select max(list_id), min(list_id)
 from list_medications
 
--- Фильтрация строк с помощью where. Вывести пустую колонку
+-- Фильтрация строк с помощью where
 select manufacturer
 from list_medications
 where manufacturer is null
@@ -23,16 +23,16 @@ where manufacturer is null
 -- вывести все Сердечно Сосудистые или Жаропонижающие
 select *
 from list_medications
-where category = 'Сердечно Сосудистые' or category = 'Жаропонижающие'
+where category = 'Сердечно-Сосудистые' or category = 'Жаропонижающие'
 
--- находит значения  которые начинаются на "Н" первые две записи  по убыванию
+-- находит значения  которые начинаются на "Н" первые две записи по убыванию
 select *
 from list_medications
 where active_substance like 'Н%'
 order by name desc
 limit 2
 
--- возвращает только те строки которые присутствуют в обох запросах
+-- возвращает только те строки которые присутствуют в обоих запросах
 select category
 from list_medications
 intersect
