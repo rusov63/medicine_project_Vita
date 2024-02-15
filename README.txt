@@ -68,6 +68,10 @@
 Реализация кода смотрите файл kaprekar_constant.py
 
 
+Проект хранится на GitHube
+https://github.com/rusov63/test_task_Directory_Medicines_Vita
+
+
 
 
 
